@@ -1,7 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Home from "@/pages/Home.jsx";
+// import Home from "@/pages/Home.jsx";
+import HomeFeed from "@/pages/HomeFeed.jsx";
 import Explore from "@/pages/Explore.jsx";
 import Notifications from "@/pages/Notifications.jsx";
 import Settings from "@/pages/Settings.jsx";
@@ -15,7 +16,7 @@ export default function AppRoutes() {
   return (
     <Routes>
       {/* Public */}
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<HomeFeed />} />
 
       {/* Protected */}
       <Route
@@ -65,4 +66,5 @@ export default function AppRoutes() {
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
+
 }
