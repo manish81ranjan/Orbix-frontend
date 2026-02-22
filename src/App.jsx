@@ -1,5 +1,6 @@
 import React from "react";
-import AppRoutes from "./routes";
+// import AppRoutes from "./routes";
+import AppRoutes from "./routes/index.jsx";
 import { AuthProvider } from "./store/auth.store";
 
 /**
@@ -14,3 +15,4 @@ export default function App() {
     </AuthProvider>
   );
 }
+
